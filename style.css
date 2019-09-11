@@ -591,6 +591,6 @@ footer{
 	font: 15vh /1.5 Tahoma, Arial, sans-serif;
 	color: var(--color08);
 	margin: auto;
-	transition: color 1500ms ease;
+	transition: color 1600ms ease;
 	text-align: center;
 }
