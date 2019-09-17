@@ -1,7 +1,7 @@
 /*
 Style sheet is style.css for LaunchCode html-me-something
 author is George A. Burns
-revision level is 00.20190910
+revision level is 00.20190909
 */
 
 
@@ -58,7 +58,7 @@ main{
 	grid-gap: 4px;
 	padding: 2px;
 	grid-template-columns: 2fr 3fr;
-	height: 17vh;
+	height: 37vh;
 	overflow:hidden;
 	color: var(--color02);
 	font-weight:bold;
@@ -70,6 +70,7 @@ main{
 	left: 25%;
 	margin-bottom: 10vh;
 	z-index: 1;
+	// border: 5px solid var(--color03);
 }	
 
 .title-grid input:checked ~ .contact{transform: none;};     /* This makes it disappear */
@@ -109,7 +110,7 @@ main{
 	font-weight:bold;
 	font-size: 2.5vh;
 }
-#top_picture {
+.top_picture {
 	min-height: 12vh;
 	grid-row: 1 / span 5;
 	z-index: 1;
@@ -120,6 +121,14 @@ main{
 	margin-right: auto;
 	border-radius: 15px;
 }
+
+.top_picture hover{
+	background: url('./A_images/George_Burns_Dim.png') no-repeat 0 -10vh;
+}
+.title_band{
+	background-color: var(--color23);
+}
+
 
 
 /* FORM STYLES */
@@ -588,9 +597,9 @@ footer{
 	cursor:pointer;
 }
 .author{
-	font: 15vh /1.5 Tahoma, Arial, sans-serif;
 	color: var(--color08);
 	margin: auto;
-	transition: color 1600ms ease;
+	font-size: 15px;
+	transition: color 1500ms ease;
 	text-align: center;
 }
